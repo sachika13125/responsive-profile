@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', Verdana, sans-serif;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+a:link {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    position: relative;
+    padding: 40px;
+    background-color: light;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+.nav-icon {
+    position: absolute;
+    height: 50px;
+    top: 30px;
+    left: 30px;
+}
+
+.nav p{
+    float: left;
+    margin-left: 70px;
+    font-size: 23px;
+}
+
+.nav-links {
+    float: right;
+    list-style-type: none;
+    text-align: right; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+.nav-links a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link1 {
+    float: right;
+    margin: 3px 10px;
+}
+
+.nav-link2 {
+    float: right;
+    margin: 3px 10px;
+}
+
+.nav-link3 {
+    float: right;
+    margin: 3px 10px;
+}
+
+.page { 
+    background-color: rgb(235, 234, 232);
+}
+
+.content {
+    /* add styling here that affects all the content sections */
+    /* for example margin and padding */
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.content.page-header {
+    /* add styling here that is only for the header content section */
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px
+}
+
+.title-heading {
+    font-size: 32pt;
+}
+
+.subtitle-heading {
+    font-size: 24pt;
+    
+}
+
+.item {
+    float: left;
+    width: 31%;
+    margin: 20px 1.15%; 
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 400px;
+    /* background-color: #7d9ab9; */
+
+}
+
+.text {
+    font-size: 20px;
+}
+
+.content.sub-nav {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.more {
+    text-align: center;
+}
+
+.content.link {
+    padding-left: 10px;
+}
+
+.back {
+    text-align: left;
+}
+
+.footer {
+    position:relative;
+    clear: both;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+.footer-info p{
+    position: absolute;
+    top: 20px;
+    right: 10px
+}
+
+.home-icon {
+    float: left;
+    height: 45px;
+    margin: 10px 0px 20px 15px;;
+}
+
+.home-a {
+    display: inline-block;
+    margin: 25px 0px 0px 20px;
+}

@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    color: #333333;
+    background-color: #f3f3f3
+}
+
+/* ----------------------------------------- Header --------------------------------------------- */
+
+.nav-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+}
+
+.nav-image {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #333333;
+}
+
+.nav-section h1 {
+    font-size: 1.2rem;
+    margin-right: auto;
+}
+
+.nav-icon {
+    height: 2.5em;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: black;
+}
+.nav-links a:hover {
+    font-weight: bold;
+}
+
+.hamburger-hidden {
+    display: none;
+}
+
+.sp-links {
+    display: none;
+}
+
+.sp-sm {
+    display: none;
+}
+
+/* ----------------------------------------- Mein --------------------------------------------- */
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 0 5rem 0;
+    column-gap: 2rem;
+    background-color: #f3f3f3;
+}
+
+.introduce-picture img{
+    width: 500px;
+    border-radius: 300px;
+}
+
+.introduce-hello {
+    margin-top: 3rem;
+}
+
+.introduce-hello h1 {
+    font-size: 5.5em;
+    margin-bottom: 1.5rem;
+}
+
+.introduce-hello h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+    margin-left: 10px;
+}
+
+.introduce-hello p {
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+    margin-left: 10px;
+}
+
+.introduce-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem
+}
+
+.link-button a {
+    display: inline-block;
+    color: #fff;
+    background-color: lightcoral;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    line-height: 10rem;
+}
+
+#link-button-1 a{
+    background-color: salmon;
+}
+
+#link-button-2 a{
+    background-color:darkseagreen;
+}
+
+#link-button-3 a{
+    background-color:#80d8da ;
+}
+
+
+#link-button-1 a:hover, 
+#link-button-2 a:hover, 
+#link-button-3 a:hover {
+    background-color: #FFF;
+    color: #333333;
+}
+
+/* ----------------------------------------- Contact --------------------------------------------- */
+
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.contact-container h2 {
+    margin: 2rem 0 1rem 0;
+    position: relative;
+}
+
+.contact-container h2:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;/*線の上下位置*/
+    width: 100px;/*線の長さ*/
+    height: 0.5px;/*線の太さ*/
+    transform: translateX(-50%);/*位置調整*/
+    background-color: #333;/*線の色*/
+    border-radius: 2px;/*線の丸み*/
+}
+
+.contact-container label {
+    font-size: 14px;
+}
+
+.form-name {
+    margin: 1rem;
+}
+
+.form-email {
+    margin: 1rem;
+}
+
+.form-phone {
+    margin: 1rem;
+}
+
+.form-message {
+    margin: 1rem;
+}
+
+
+#name-input {
+    margin-top: 0.5rem;
+}
+
+#email-input {
+    margin-top: 0.5rem;
+}
+
+#phone-input {
+    margin-top: 0.5rem;
+}
+
+#message-input {
+    margin-top: 0.5rem;
+    width: 20rem;
+    height: 10rem;
+}
+
+.button-submit {
+    margin: 1rem 0 2rem 0;
+}
+
+.button-submit button {
+    cursor: pointer;
+    color: #333;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffc04b
+}
+
+.button-submit button:hover {
+    background-color: #fff;
+}
+
+/* ----------------------------------------- Footer --------------------------------------------- */
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3rem 3rem;
+    border-top: solid 1px #aaaaaa;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15rem;
+}
+
+.footer-info p {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-sm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 10px;
+}
+
+.footer-sm img {
+    width: 30px;
+}
+
+
+/* ----------------------------------------- Media --------------------------------------------- */
+
+.hamburger-hidden {
+    display: none;
+}
+
+.sp-links {
+    display: none;
+}
+
+.sp-sm {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {/* ハンバーガーメニューのボタン */
+    /* HEADER */
+    .nav-section {
+        padding-left: 1.5rem
+    }
+
+    .hamburger-open {
+        position: fixed;  /* 位置を固定 */
+        top: 0;  /* 最上部 */
+        right: 0rem;  /* 右端 */
+        /* 中の要素を上下中央寄せ */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* サイズ指定 */
+        height: 70px;
+        width: 70px;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    .hamburger-open span,         /* 真ん中の線 */
+    .hamburger-open span:before,  /* 上の線 */
+    .hamburger-open span:after {  /* 下の線 */
+        content: "";
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #333333;
+        transition: .5s;
+        /* 3本線の位置は絶対位置で指定 */
+        position: absolute;
+    }
+  /* 上の線の位置 */
+    .hamburger-open span:before {
+        /* 真ん中の線と離す距離 */
+        bottom: 8px;
+    }
+  /* 下の線の位置 */
+    .hamburger-open span:after {
+        /* 真ん中の線と離す距離 */
+        top: 8px;
+    }
+
+    #hamburger-check:checked ~ .hamburger-open span {
+        background: rgba(255, 255, 255, 0);
+      }
+
+    #hamburger-check:checked ~ .hamburger-open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+      
+    #hamburger-check:checked ~ .hamburger-open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    /* メニューのデザイン*/
+    .hamburger-content {
+        width: 100%;
+        height: 20%;
+        position: fixed;
+        top: 0;
+        left: 100%;/* メニューを画面の外に飛ばす */
+        z-index: 99;
+        transition: .5s;
+        margin-top: 3.5rem;
+    }
+
+    .hamburger-link li{
+        margin-top: 0.5rem;
+    }
+
+    .hamburger-link a {
+        display: inline-block;
+        font-size: 10px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    #sp-link-1 a {
+        background-color: rgba(233, 150, 122, 0.7);
+        color: #FFF;
+    }
+
+    #sp-link-2 a {
+        background-color: rgba(143, 188, 143, 0.7);
+        color: #FFF;
+    }
+
+    #sp-link-3 a {
+        background-color: rgba(190, 255, 255, 0.7);
+        color: #FFF;
+    }
+    
+    /* アイコンがクリックされたらメニューを表示 */
+    #hamburger-check:checked ~ .hamburger-content {
+    left: 70vw;/* メニューを画面に入れる */
+    }
+
+    .sp-links {
+        display: block;
+    }
+
+    .hamburger-sm {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem 2rem;
+    }
+
+    .sp-sm {
+        display: block;
+    }
+    
+    .sp-sm img {
+        width: 35px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* LANDING-PAGE */
+
+    #sp-introduce-picture img{
+        width: 350px;
+        border-radius: 300px;
+    }
+
+    .introduce-hello {
+        margin: 0 1rem;
+    }
+
+    .introduce-links {
+        display: none;
+    }
+
+
+
+    /* CONTACT PAGE */
+
+    #name-input {
+        height: 2rem;
+    }
+    
+    #email-input {
+        height: 2rem;
+    }
+    
+    #phone-input {
+        height: 2rem;
+    }
+    
+    #message-input {
+        width: 20rem;
+        height: 10rem;
+    }
+
+
+    /* FOOTER FOR SP */
+
+    .footer-info p {
+        padding-top: 1.5rem;
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+    }
+    
+    .footer-sm {
+        margin-top: 2rem;
+    }
+}
+

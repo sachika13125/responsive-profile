@@ -5,44 +5,76 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Richard Pratt</title>
-        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/mao.css">
     </head>
     <body>
-        <nav class="nav"><img class="nav-icon" src="imgs/abstract.png" alt="icon"><p>Richard Pratt</p>
-            <ul class="nav-links">
-                <li class="nav-link3"><a href="pages/contact.html"><span>Contact</span></a></li>
-                <li class="nav-link2"><a href="pages/works.html"><span>Works</span></a></li>
-                <li class="nav-link1"><a href="pages/bio.html"><span>Biography</span></a></li>
-            </ul>  
-        </nav>
-            <div class="container">
-                <div class="page">
-                    <section class="sidebar">
-                        <img src="imgs/pexels-simon-robben-614810.jpg" class="img-richard" alt="The picture of Richard Pratt">
-                    </section>
-                    <section class="content">                       
-                            <section class="introduce">
-                                <div class="intoroduce-hello">
-                                    <h1> Hello </h1>
-                                </div>
-                                <div>
-                                    <h2>A Bit About Me</h2>
-                                        <p class="introduce-paragraph">I'm a paragraph. Click here to add your own text and edit me.<br>
-                                        I'm a great place for you to tell a story and let your users know <br> a little more about you.</p>
-                                </div>
-                                    <section class="introduce-links">
-                                        <ul>
-                                            <li class="link-button1"><a href="pages/bio.html"><span>Biography</span></a></li>
-                                            <li class="link-button2"><a href="pages/works.html"><span>Works</span></a></li>
-                                            <li class="link-button3"><a href="pages/form.html"><span>Contact</span></a></li>
-                                        </ul>
-                                    </section>
-                            </section>
-                    </section>
+        <nav>
+            <div class="nav-section">
+                <figure>
+                    <a href="index.html"  class="nav-image">
+                        <img class="nav-icon" src="imgs/abstract.png" alt="icon">
+                        <h1>Richard Pratt</h1>
+                    </a>
+                </figure>
+                <div>
+                    <ul class="nav-links">
+                        <li class="nav-link3"><a href="pages/contact.html">Contact</a></li>
+                        <li class="nav-link2"><a href="pages/works.html">Works</a></li>
+                        <li class="nav-link1"><a href="pages/bio.html">Biography</a></li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="sp-link">
+                <input type="checkbox" id="hamburger-check" class="hamburger-hidden">
+                <label for="hamburger-check" class="hamburger-open"><span></span></label>
+                <div class="hamburger-content">
+                    <ul class="hamburger-link"> 
+                        <li class="sp-links" id="sp-link-1"><a href="pages/bio.html">Biography</a></li>
+                        <li class="sp-links" id="sp-link-2"><a href="pages/works.html">Works</a></li>
+                        <li class="sp-links" id="sp-link-3"><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="hamburger-sm">
+                        <li class="sp-sm"><a href="#"><img src="imgs/instagram.svg" alt="My Instagram account"></a></li>
+                        <li class="sp-sm"><a href="#"><img src="imgs/twitter.svg" alt="My Twitter account"></a></li>
+                        <li class="sp-sm"><a href="#"><img src="imgs/linkedin.svg" alt="My Linkedin account"></a></li>
+                    </ul>
                 </div>
             </div>
-        <footer class="footer">
-            <p> E-mail : info@gmail.com<br> PhoneNumber : 123456789</p>
+        </nav>
+            <main class="main-container">
+                <figure class="introduce-picture" id="sp-introduce-picture">
+                    <img src="imgs/pexels-simon-robben-614810.jpg" alt="The picture of Richard Pratt">
+                </figure>                  
+                <section>
+                    <div class="introduce-hello">
+                        <h1>Hello</h1>
+                        <h2>A Bit About Me</h2>
+                        <p>I'm a paragraph. Click here to add your own<br>text and edit me.
+                        I'm a great place for you to tell a story<br>and let your users know 
+                        a little more about you.</p>
+                    <div>
+                        <ul class="introduce-links">
+                            <li class="link-button" id="link-button-1"><a href="pages/bio.html">Biography</a></li>
+                            <li class="link-button" id="link-button-2"><a href="pages/works.html">Works</a></li>
+                            <li class="link-button" id="link-button-3"><a href="pages/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        <footer class="footer-container">
+            <div>
+                <ul class="footer-info">
+                    <li><p>Tel</p><span>123456789</span></li>
+                    <li><p>Email</p><span>info@gmail.com</span></li>
+                </ul>
+            </div>
+            <div>  
+                <ul class="footer-sm">
+                    <li><a href="#"><img src="imgs/instagram.svg" alt="My Instagram account"></a></li>
+                    <li><a href="#"><img src="imgs/twitter.svg" alt="My Twitter account"></a></li>
+                    <li><a href="#"><img src="imgs/linkedin.svg" alt="My Linkedin account"></a></li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>

@@ -1,85 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biography</title>
-    <link rel="stylesheet" href="../style/bio.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biography</title>
+        <link rel="stylesheet" href="../style/sachika.css">
 
-</head>
-<body>
-    <nav class="nav"><img class="nav-icon" src="../imgs/abstract.png" alt="icon"><p>Richard Pratt</p>
-        <ul class="nav-links">
-            <li class="nav-link3"><a href="contact.html"><span>Contact</span></a></li>
-            <li class="nav-link2"><a href="works.html"><span>Works</span></a></li>
-            <li class="nav-link1"><a href="../index.html"><span>Home</span></a></li>
-            
-        </ul>  
-    </nav>
 
-    <div class="page">
-        <section class="bio">
-            <h1 class="title-heading"> Biography </h1>
-            <p> Richard Pratt </p>
-        </section>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-section">
+                <figure>
+                    <a href="../index.html"  class="nav-image">
+                        <img class="nav-icon" src="../imgs/abstract.png" alt="icon">
+                        <h1>Richard Pratt</h1>
+                    </a>
+                </figure>
+                <div>
+                    <ul class="nav-links">
+                        <li class="nav-link3"><a href="../pages/contact.html">Contact</a></li>
+                        <li class="nav-link2"><a href="../pages/works.html">Works</a></li>
+                        <li class="nav-link1"><a href="../pages/bio.html">Biography</a></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="sp-link">
+                <input type="checkbox" id="hamburger-check" class="hamburger-hidden">
+                <label for="hamburger-check" class="hamburger-open"><span></span></label>
+                <div class="hamburger-content">
+                    <ul class="hamburger-link"> 
+                        <li class="sp-links" id="sp-link-1"><a href="../pages/bio.html">Biography</a></li>
+                        <li class="sp-links" id="sp-link-2"><a href="../pages/works.html">Works</a></li>
+                        <li class="sp-links" id="sp-link-3"><a href="../pages/contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="hamburger-sm">
+                        <li class="sp-sm"><a href="#"><img src="../imgs/instagram.svg" alt="My Instagram account"></a></li>
+                        <li class="sp-sm"><a href="#"><img src="../imgs/twitter.svg" alt="My Twitter account"></a></li>
+                        <li class="sp-sm"><a href="#"><img src="../imgs/linkedin.svg" alt="My Linkedin account"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-        <section class="content view">
-            <h2 class="subtitle-heading">Overview</h2>
-            <img src="../imgs/actor.jpg" class="actor-image" alt="a image of an actror">
-            <p class="text"><span class="sub-title">Born</span> September 5, 1989 &#183; Vancouver, Brithsh Columbia, Canada</p>
-            <p class="text"><span class="sub-title">Birth name</span> Richard Rodney Pratt</p>
-            <p class="text"><span class="sub-title">Occupation</span> Actor &#183; model</p>
-            <p class="text"><span class="sub-title">Years active</span> 2009&#45;present</p>
-        </section>
+        <div class="page">
+            <section class="bio">
+                <h1> Biography </h1>
+                <p> Richard Pratt </p>
+            </section>
 
-        <section class="content">
-            <h2 class="subtitle-heading">Mini Bio</h2>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua. Ipsum elit viverra <strong>senectus aenean</strong> nisl luctus. 
-                Sapien potenti at conubia potenti ullamcorper condimentum vel 
-                eleifend hac commodo felis commodo. Sollicitudin feugiat sit 
-                eros elementum iaculis nullam volutpat potenti turpis diam 
-                vitae <em>libero lacus</em>. </p>
-            <p class="text">Pulvinar libero sociosqu urna dapibus purus purus ultrices 
-                platea egestas nam. Lectus donec eros morbi interdum 
-                vehicula praesent nunc rhoncus lorem.</p>
-            <p class="text">Dui praesent <strong class="word">a vulputate ullamcorper</strong> vestibulum nisi neque 
-                tincidunt lacinia scelerisque primis aliquam. Phasellus dui 
-                nullam nisl nulla sed nunc conubia ullamcorper.</p>
-            <p class="text">Varius in dictumst a tempor ultrices purus fames accumsan sed. 
-                Ac ultricies pharetra hendrerit litora tellus luctus laoreet 
-                cursus rutrum massa fringilla torquent eros varius. Vel nibh 
-                risus bibendum curabitur <strong>euismod nostra</strong> ultricies risus est 
-                dapibus habitant. Ligula nisi sem dapibus donec viverra rhoncus 
-                fermentum tellus eu placerat habitasse curae mauris. Hac aptent 
-                accumsan lacus consectetur tempus justo tempus fermentum lectus 
-                suspendisse.</p>
-        </section>
 
-        <section class="content">
-            <h2 class="subtitle-heading">Quotes</h2>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. </li>
-                <li>Metus dictumst sit ex torquent metus.</li>
-                <li>Vulputate vitae volutpat aenean diam diam pretium gravida 
-                    lacus id vulputate.</li>
-            </ul>
-        </section>
+            <section class="content">
+                <h2>Overview</h2>
+                <div class="view">
+                    <img src="../imgs/actor.jpg" class="actor-image" alt="a image of an actror">
+                    <div class="info">
+                        <p class="text"><span>Born</span> September 5, 1989 &#183; Vancouver, Brithsh Columbia, Canada</p>
+                        <p class="text"><span>Birth name</span> Richard Rodney Pratt</p>
+                        <p class="text"><span>Occupation</span> Actor &#183; model</p>
+                        <p class="text"><span>Years active</span> 2009&#45;present</p>
+                    </div>
+                </div>
+            </section>
 
-        <a class="back" href="../index.html"> Go Back to Home </a>
-    </div>
 
-    <footer class="footer">
-        <div>
-        <a href="../index.html"><img class="home-icon" src="../imgs/home.png" alt="go back home"><span class="home-a">Go back HOME</span></a>
+            <section class="content">
+                <h2>Mini Bio</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ipsum elit viverra <strong>senectus aenean</strong> nisl luctus.
+                    Sapien potenti at conubia potenti ullamcorper condimentum vel
+                    eleifend hac commodo felis commodo. Sollicitudin feugiat sit
+                    eros elementum iaculis nullam volutpat potenti turpis diam
+                    vitae <em>libero lacus</em>. </p>
+                <p>Pulvinar libero sociosqu urna dapibus purus purus ultrices
+                    platea egestas nam. Lectus donec eros morbi interdum
+                    vehicula praesent nunc rhoncus lorem.</p>
+                <p>Dui praesent <strong class="word">a vulputate ullamcorper</strong> vestibulum nisi neque
+                    tincidunt lacinia scelerisque primis aliquam. Phasellus dui
+                    nullam nisl nulla sed nunc conubia ullamcorper.</p>
+                <p>Varius in dictumst a tempor ultrices purus fames accumsan sed.
+                    Ac ultricies pharetra hendrerit litora tellus luctus laoreet
+                    cursus rutrum massa fringilla torquent eros varius. Vel nibh
+                    risus bibendum curabitur <strong>euismod nostra</strong> ultricies risus est
+                    dapibus habitant. Ligula nisi sem dapibus donec viverra rhoncus
+                    fermentum tellus eu placerat habitasse curae mauris. Hac aptent
+                    accumsan lacus consectetur tempus justo tempus fermentum lectus
+                    suspendisse.</p>
+            </section>
+
+
+            <section class="content">
+                <h2>Quotes</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. </li>
+                    <li>Metus dictumst sit ex torquent metus.</li>
+                    <li>Vulputate vitae volutpat aenean diam diam pretium gravida
+                        lacus id vulputate.</li>
+                </ul>
+            </section>
         </div>
-        <div class="footer-info">
-        <p> E-mail : info@gmail.com<br> PhoneNumber : 123456789</p>
-        </div>
-    </footer>
-</body>
+
+
+        <footer class="footer-container">
+            <div>
+                <ul class="footer-info">
+                    <li><p>Tel</p><span>123456789</span></li>
+                    <li><p>Email</p><span>info@gmail.com</span></li>
+                </ul>
+            </div>
+            <div>  
+                <ul class="footer-sm">
+                    <li><a href="#"><img src="../imgs/instagram.svg" alt="My Instagram account"></a></li>
+                    <li><a href="#"><img src="../imgs/twitter.svg" alt="My Twitter account"></a></li>
+                    <li><a href="#"><img src="../imgs/linkedin.svg" alt="My Linkedin account"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>

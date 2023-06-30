@@ -59,6 +59,12 @@ body {
     display: none;
 }
 
+<<<<<<< HEAD
+=======
+.sp-links {
+    display: none;
+}
+>>>>>>> c15ed102f75b428d7f651203c35c57a2ff2e36f6
 
 .sp-sm {
     display: none;
@@ -261,7 +267,11 @@ body {
     display: none;
 }
 
+<<<<<<< HEAD
 .sp-link {
+=======
+.sp-links {
+>>>>>>> c15ed102f75b428d7f651203c35c57a2ff2e36f6
     display: none;
 }
 
@@ -374,7 +384,11 @@ body {
     left: 70vw;/* メニューを画面に入れる */
     }
 
+<<<<<<< HEAD
     .sp-link {
+=======
+    .sp-links {
+>>>>>>> c15ed102f75b428d7f651203c35c57a2ff2e36f6
         display: block;
     }
 
